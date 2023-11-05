@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        Crear cuenta
+    </header>
+
+    <main>
+        <h2>Registro de Usuario</h2>
+        <form action="procesar_registro.php" method="post">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" required>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required>
+
+            <label for="perfil">Perfil del usuario:</label>
+            <select id="perfil" name="perfil">
+                <option value="comprar">Comprar</option>
+                <option value="vender">Vender</option>
+            </select>
+
+            <label>Categorías de interés:</label>
+            <div id="intereses">
+                <input type="checkbox" name="intereses" value="Electro"> Electro<br>
+                <input type="checkbox" name="intereses" value="Moda"> Moda<br>
+                <input type="checkbox" name="intereses" value="Hogar"> Hogar<br>
+                <input type="checkbox" name="intereses" value="Juguetería"> Juguetería<br>
+                <input type="checkbox" name="intereses" value="Vida sana"> Vida sana<br>
+            </div>
+
+            <label for="foto">Foto de usuario:</label>
+            <input type="file" id="foto" name="foto">
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirmar contraseña:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar datos</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <p>Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function (event) {
+                event.preventDefault(); 
+                window.location.href = '/';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+@media (max-width: 768px) {
+
+    .product {
+        flex: 1; /* Cada producto ocupa el 100% del espacio disponible */
+        max-width: 100%; /* 1 producto por fila en móviles */
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-container, .search-bar, .promote {
+        width: 33.33%; /* Cada elemento ocupa el 33.33% del espacio horizontal */
+    }
+
+    .logo {
+        max-width: 100%;
+    }
+
+    .search-bar input {
+        width: 70%; /* El campo de búsqueda ocupa el 70% del espacio disponible */
+    }
+
+    .icon-container {
+        width: 15%; /* El icono de búsqueda ocupa el 15% del espacio disponible */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promote {
+        text-align: center;
+    }
+
+    .header-bottom {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-options ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .menu-options li {
+        margin-right: 20px; /* Agrega margen entre los elementos */
+    }
+}
+
+@media (min-width: 1024px) {
+    .product {
+        max-width: calc(25% - 10px); /* 4 productos por fila en escritorio */
+    }
+}
+
+@media (min-width: 361px) {
+    .product-info {
+        display: block;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .product-details {
+        max-width: 90%; 
+        margin: 0 auto;
+    }
+}
+
+body {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+form {
+    text-align: center; 
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.product p.precio {
+    flex: 30%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product p.descuento {
+    flex: 70%;
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.product p.producto {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.precio-descuento {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.burger-menu {
+    position: fixed;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: blue; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.burger-menu i {
+    font-size: 24px; 
+}
+
+.img-producto {
+    max-width: 100px;
+    text-align: center; 
+}
+
+li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #424242; 
+    margin-right: 10px; 
+}
+
+.promote {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 20px; 
+    font-size: 16px;
+    margin-right: 20px;
+    margin: 0;
+}
+
+i {
+    font-size: 22px; 
+}
+
+footer {
+    background-color: white; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+.footer-section {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.footer-section i {
+    font-size: 2em; 
+    margin-bottom: 10px;
+}
+
+.icon-container {
+    display: inline-block; 
+    background-color: white;
+    border: 1px solid black; 
+    padding: 10px; 
+    width: 15px; 
+    height: 15px; 
+    text-align: center;
+    line-height: 5px; 
+}
+
+.icon-container i {
+    font-size: 18px; 
+}
+
+
+main{
+    background-color: #f6f6f6;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.main2{
+    background-color: #f6f6f6;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.product-details {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.product {
+    margin-bottom: 10px;
+    flex: 1; 
+
+    margin: 5px;
+    max-width: 100%; /* Evita que el contenedor sea más ancho que la imagen */
+    margin: 0 auto;
+}
+
+.img-producto {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+.descuento {
+    color: green;
+    font-weight: bold;
+}
+
+.producto {
+    font-size: 1.2em;
+}
+
+
+label, input, select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fa-solid fa-truck{
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+}
+
+header {
+    background-color: #EAC926;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.logo-container, .search-bar {
+    width: 50%;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.search-bar input {
+    width: 50%; /* La barra de búsqueda ocupa el 50% de su contenedor */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: gray;
+}
+
+.icon-container {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 5px;
+    margin-left: 10px; /* Agrega margen entre el campo de entrada y el icono */
+}
+
+.icon-container i {
+    font-size: 20px;
+}
+
+.seleccionables{
+    display: flex;
+    flex-direction: row;
+}
