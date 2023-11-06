@@ -14,8 +14,8 @@ app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, 'src','views', 'register.html'));
 });
 
-app.get('/iniciar-sesion', (req, res) => {
-    res.sendFile(path.join(__dirname,'src', 'views','iniciar-sesion.html'));
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname,'src', 'views','login.html'));
 });
 
 const publicPath = path.join(__dirname,'src', 'public');
