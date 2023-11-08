@@ -10,6 +10,8 @@
     header {
         display: flex;
         flex-direction: column;
+        justify-content: space-between ;
+        flex-wrap: nowrap;
     }
 
     .header-top {
@@ -86,7 +88,7 @@ body {
 
 form {
     text-align: center; 
-    width: 300px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,13 +217,16 @@ footer {
 
 
 main{
-    background-color: #d3d0d0;
+    background-color: #e4e1e1;
     text-align: center;
     width: 100%;
     margin: 10px auto;
 
 }
-
+.banner  {
+   width: 100%;
+   }
+   
 .main2{
     background-color: #d3d0d0;
     text-align: center;
@@ -243,12 +248,7 @@ main{
     margin-top: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    /*display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-top: 1px solid #ebebeb;
-    margin-top: 1px;
-    background-color: #ffffff;*/
+    
     
 }
 .product {
@@ -256,7 +256,7 @@ main{
     flex: 1; 
 
     margin: 20px;
-    max-width: 220px; /* Evita que el contenedor sea más ancho que la imagen */
+    max-width: 230px; 
     
 }
 
@@ -324,7 +324,7 @@ header {
 }
 
 .search-bar input {
-    width: 50%; /* La barra de búsqueda ocupa el 50% de su contenedor */
+    width: 70%; /* La barra de búsqueda ocupa el 50% de su contenedor */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
