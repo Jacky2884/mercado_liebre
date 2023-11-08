@@ -14,6 +14,8 @@
         flex-wrap: nowrap;
     }
 
+    /*____header___*/
+
     .header-top {
         display: flex;
         align-items: center;
@@ -172,16 +174,15 @@ i {
     font-size: 22px; 
 }
 
+/*___footer____*/
+
 footer {
     background-color: white; 
     
     align-items: center; 
     padding: 20px; 
     display: flex;
-    flex-wrap: wrap;
-    
-    
-      
+    flex-wrap: wrap;    
 }
 
 .footer-section {
@@ -196,10 +197,13 @@ footer {
 .footer-section i {
     font-size: 2em; 
     margin-bottom: 10px;
-   
+    transition: 475ms;
+      }
 
-}
-
+.footer-section i:hover {
+     color: #54d42d;
+ }
+ 
 .icon-container {
     display: inline-block; 
     background-color: white;
@@ -324,7 +328,7 @@ header {
 }
 
 .search-bar input {
-    width: 70%; /* La barra de búsqueda ocupa el 50% de su contenedor */
+    width: 70%; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
