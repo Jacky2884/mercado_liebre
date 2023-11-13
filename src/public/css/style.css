@@ -193,16 +193,27 @@ footer {
     align-items: center;
     width: 100%;
 }
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+  color: #03264c;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
-.footer-section i {
-    font-size: 2em; 
+.info__footer {
+    font-size: 1rem;
+  }
+  footer i {
+    font-size: 2em;
     margin-bottom: 10px;
     transition: 475ms;
-      }
-
-.footer-section i:hover {
-     color: #54d42d;
- }
+  }
+   footer i:hover {
+    color: #39e223;
+  }
  
 .icon-container {
     display: inline-block; 
